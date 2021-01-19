@@ -1,0 +1,41 @@
+
+html, body {
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;
+    font-family: 'Karla';
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.menu1{
+    background-color: aqua;
+    width:50%;
+    height: 15%;
+}
+.menu2{
+    background-color: bisque;
+    width:50%;
+    height: 25%;
+    display: flex;
+}
+h1{
+    text-align: center;
+}
+#sapito{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100px;
+    height: 100px;  
+}
+
+
