@@ -1,12 +1,16 @@
+body{
+    background-color: rgba(18, 46, 124, 0.808);
+    height: fit-content;
+}
 .navheader{
     font-size: 20px;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 0px;
+    margin-left: 0px;
     background-color: black;
     align-items: center; 
 }
 .menu{
-    margin-left: 5px;
+    margin-left: 0px;
 }
 .galeria{
     color:aliceblue;
@@ -32,9 +36,6 @@
     display: inline-block;
     background-color:black;  
 }
-.container{
-    width: 100%;
-}
 .entrada{
     margin-left: 20px;
     position: absolute;
@@ -45,10 +46,23 @@
 .campo{
     margin-top: 2px;
 }
+.contenedor{
+    background-color:rgba(18, 46, 124, 0.808);
+    height: fit-content;
+}
+.filas{
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.233);
+}
+.filas:hover{
+    transform:scale(1.05);
+    
+}
+
 #imagen{
     width: 100%;
     opacity: 75%;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 #menu{
     position: absolute;
@@ -68,6 +82,28 @@
     top: 30%;
     left: 46%; 
 }
+#tabla{
+    left: 9%;
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    text-decoration: double;
+    text-decoration-color:black;
+    top: 40%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.062);
+    background-blend-mode: lighten;
+    text-align: center;
+    padding-bottom: 5px;
+}
+#secundaria{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    position: absolute;
+    background-color: rgba(18, 46, 124, 0.808);
+}
 #user{
     margin-left: 26px;
 }
@@ -80,4 +116,10 @@
 #botones{
     display: inline-flex;
     flex-direction: row;
+}
+#title{
+    left: 9%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
 }
