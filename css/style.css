@@ -1,0 +1,83 @@
+.navheader{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: black;
+    align-items: center; 
+}
+.menu{
+    margin-left: 5px;
+}
+.galeria{
+    color:aliceblue;
+    text-decoration: rgb(47, 0, 255);
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    background-color:black;
+}
+.login{
+    color:aliceblue;
+    text-decoration: rgb(47, 0, 255);
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    background-color:black;
+}
+.about{
+    color:aliceblue;
+    text-decoration: rgb(47, 0, 255);
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    background-color:black;  
+}
+.container{
+    width: 100%;
+}
+.entrada{
+    margin-left: 20px;
+    position: absolute;
+    top: 10%;
+    background-color: white;
+    padding-right: 2%;
+}
+.campo{
+    margin-top: 2px;
+}
+#imagen{
+    width: 100%;
+    opacity: 75%;
+    margin-left: 5px;
+}
+#menu{
+    position: absolute;
+    font-size: 60px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color:black;
+    top: 20%;
+    left: 40%;
+}
+#fecha{
+    position: absolute;
+    font-size: 40px;
+    color: black;
+    text-decoration: double;
+    text-decoration-color:black;
+    top: 30%;
+    left: 46%; 
+}
+#user{
+    margin-left: 26px;
+}
+#log{
+    margin-left: 40%;
+}
+#reg{
+    margin-left: 30%;
+}
+#botones{
+    display: inline-flex;
+    flex-direction: row;
+}

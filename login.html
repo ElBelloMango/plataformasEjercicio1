@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>Main Page</title>
+    <title>Login</title>
 </head>
 <body>
     <div class=contenedor>
@@ -17,10 +17,16 @@
             <button class="About" role="link" onclick="window.location='about'">About</button> -->
         </div>
         <img id=imagen src="https://www.socialseo.com/wp-content/uploads/2018/11/black-brick-1024x589.jpg" alt="fondo">
-        <div class=menu>
-            <div id=menu>Ecommerce</div>
-            <br>
-            <div id=fecha>2021</div>
+        <div class=entrada>
+            <form action="js/script.js" method="POST">
+                <div id=user>Usuario: <input class=campo type="text" name="usuario"></div>
+                <div id=pss>Contraseña: <input class=campo type="password" name="pass"></div>
+                <div id=botones>
+                    <div id=log><button class=campo role="link" onclick="">Login</button></div>
+                    <div id=reg><button class=campo role="link" onclick="">register</button></div>
+                </div>
+                
+            </form>
         </div>
     </div>
     
