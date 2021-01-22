@@ -1,6 +1,10 @@
 body{
-    background-color: rgba(18, 46, 124, 0.808);
-    height: fit-content;
+    background:rgba(18, 46, 124, 0.808);
+    height: 30cm;
+    margin: 0px;
+    font-family: sans-serif;
+    background-image: url(/img/star-wars-backgrounds-25.jpg);
+    
 }
 .navheader{
     font-size: 20px;
@@ -19,6 +23,7 @@ body{
     text-align: center;
     display: inline-block;
     background-color:black;
+    margin-left: auto;
 }
 .login{
     color:aliceblue;
@@ -36,12 +41,31 @@ body{
     display: inline-block;
     background-color:black;  
 }
+.galeria:hover{
+    border-radius: 10px;
+    background: white;
+    color: black;
+}
+.login:hover{
+    border-radius: 10px;
+    background: white;
+    color: black;
+}
+.about:hover{
+    border-radius: 10px;
+    background: white;
+    color: black;
+}
 .entrada{
     margin-left: 20px;
     position: absolute;
     top: 10%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding-right: 2%;
+    height: 60%;
+    width: 25%;
+    border-radius: 20px;
+    border: 2cm black;
 }
 .campo{
     margin-top: 2px;
@@ -52,16 +76,20 @@ body{
 }
 .filas{
     width: 90%;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.233);
 }
 .filas:hover{
     transform:scale(1.05);
-    
+    border-radius: 40px;
+}
+.loginSquare{
+    margin: 0px;
 }
 
 #imagen{
     width: 100%;
-    opacity: 75%;
+    opacity: 90%;
     margin-left: 0px;
 }
 #menu{
@@ -87,14 +115,9 @@ body{
     position: absolute;
     font-size: 20px;
     color: black;
-    text-decoration: double;
-    text-decoration-color:black;
     top: 40%;
     width: 80%;
     background-color: rgba(255, 255, 255, 0.062);
-    background-blend-mode: lighten;
-    text-align: center;
-    padding-bottom: 5px;
 }
 #secundaria{
     width: 100%;
@@ -103,23 +126,38 @@ body{
     color: black;
     position: absolute;
     background-color: rgba(18, 46, 124, 0.808);
+    background-blend-mode: lighten;
 }
 #user{
     margin-left: 26px;
 }
+#pass{
+    margin-left: 26px;
+}
 #log{
-    margin-left: 40%;
+    border-radius: 10px;
 }
 #reg{
-    margin-left: 30%;
-}
+    border-radius: 10px;
+} 
 #botones{
     display: inline-flex;
     flex-direction: row;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+#reg{
+    margin-left: 30px;
 }
 #title{
     left: 9%;
     position: absolute;
     top: 40%;
     text-align: center;
+}
+#secundaria:hover{
+    font-size: 25px;
+}
+#tabla:hover{
+    font-size: 30px;
 }

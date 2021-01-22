@@ -18,14 +18,24 @@
         </div>
         <img id=imagen src="/img/star-wars-backgrounds-25.jpg" alt="fondo">
         <div class=entrada>
-            <form action="ejemplo.html" method="POST">
-                <div id=user>Usuario: <input class=campo type="text" name="usuario"></div>
-                <div id=pss>Contraseña: <input class=campo type="password" name="pass"></div>
-                <div id=botones>
-                    <div id=log><button class=campo role="link" onclick="">Login</button></div>
-                    <div id=reg><button class=campo role="link" onclick="">register</button></div>
-                </div>
-            </form>
+            <center>
+            <div class=loginSquare>
+                <form action="ejemplo.html" method="POST">
+                    <div id=user>Usuario: 
+                        <br>
+                        <input class=campo type="text" name="usuario">
+                    </div>
+                    <div id=pass>Contraseña: 
+                        <br>
+                        <input class=campo type="password" name="pass">
+                    </div>
+                    <div id=botones>
+                        <button id=log class=campo role="link" onclick="">Login</button>
+                        <button id=reg class=campo role="link" onclick="">Register</button>
+                    </div>
+                </form>
+            </div>
+            </center>
         </div>
     </div>
 </body>
