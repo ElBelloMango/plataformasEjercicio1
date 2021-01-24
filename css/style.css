@@ -1,20 +1,19 @@
 body{
-    background:rgba(18, 46, 124, 0.808);
-    height: 30cm;
+    height: 33cm;
     margin: 0px;
     font-family: sans-serif;
     background-image: url(/img/star-wars-backgrounds-25.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 .navheader{
     font-size: 20px;
-    margin-top: 0px;
-    margin-left: 0px;
     background-color: black;
     align-items: center; 
 }
 .menu{
-    margin-left: 0px;
+    justify-items: center;
 }
 .galeria{
     color:aliceblue;
@@ -24,6 +23,7 @@ body{
     display: inline-block;
     background-color:black;
     margin-left: auto;
+    transition: all 500ms ease-in-out;
 }
 .login{
     color:aliceblue;
@@ -32,6 +32,7 @@ body{
     text-align: center;
     display: inline-block;
     background-color:black;
+    transition: all 500ms ease-in-out;
 }
 .about{
     color:aliceblue;
@@ -40,6 +41,7 @@ body{
     text-align: center;
     display: inline-block;
     background-color:black;  
+    transition: all 500ms ease-in-out;
 }
 .galeria:hover{
     border-radius: 10px;
@@ -70,18 +72,20 @@ body{
 .campo{
     margin-top: 2px;
 }
-.contenedor{
-    background-color:rgba(18, 46, 124, 0.808);
-    height: fit-content;
-}
 .filas{
     width: 90%;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.233);
+    transform:scale(1);
+    transition: all 500ms ease-in-out;  
 }
 .filas:hover{
     transform:scale(1.05);
     border-radius: 40px;
+    /* -o-transform:scale(0.8); */
+    /* -webkit-border-radius: 10px; */
+    /* -moz-border-radius: 10px; */
+
 }
 .loginSquare{
     margin: 0px;
@@ -118,15 +122,20 @@ body{
     top: 40%;
     width: 80%;
     background-color: rgba(255, 255, 255, 0.062);
+    padding-bottom: 15px;
+    transition: all 500ms ease-in-out;
 }
 #secundaria{
-    width: 100%;
+    left: 4%;
+    width: 90%;
     font-size: 18px;
     text-align: center;
-    color: black;
     position: absolute;
-    background-color: rgba(18, 46, 124, 0.808);
-    background-blend-mode: lighten;
+    bottom: -50%;
+    color: black;
+    background-color: rgba(196, 212, 255, 0.199);
+    padding-bottom: 15px;
+    transition: all 500ms ease-in-out;
 }
 #user{
     margin-left: 26px;
@@ -157,7 +166,13 @@ body{
 }
 #secundaria:hover{
     font-size: 25px;
+    transition: all 500ms ease-in-out;
+    border-radius: 10px;
+    -moz-border-radius: 10px;  
 }
 #tabla:hover{
     font-size: 30px;
+    transition: all 500ms ease-in-out;  
+    border-radius: 10px;
+    -moz-border-radius: 10px;
 }
