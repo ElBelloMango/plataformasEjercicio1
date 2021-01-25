@@ -1,3 +1,4 @@
+/* Galeria Styles */
 body{
     height: 33cm;
     margin: 0px;
@@ -23,7 +24,7 @@ body{
     display: inline-block;
     background-color:black;
     margin-left: auto;
-    transition: all 500ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 .login{
     color:aliceblue;
@@ -32,7 +33,7 @@ body{
     text-align: center;
     display: inline-block;
     background-color:black;
-    transition: all 500ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 .about{
     color:aliceblue;
@@ -41,7 +42,7 @@ body{
     text-align: center;
     display: inline-block;
     background-color:black;  
-    transition: all 500ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 .galeria:hover{
     border-radius: 10px;
@@ -82,10 +83,6 @@ body{
 .filas:hover{
     transform:scale(1.05);
     border-radius: 40px;
-    /* -o-transform:scale(0.8); */
-    /* -webkit-border-radius: 10px; */
-    /* -moz-border-radius: 10px; */
-
 }
 .loginSquare{
     margin: 0px;
@@ -123,6 +120,7 @@ body{
     width: 80%;
     background-color: rgba(255, 255, 255, 0.062);
     padding-bottom: 15px;
+    backdrop-filter: blur(1px);
     transition: all 500ms ease-in-out;
 }
 #secundaria{
@@ -135,6 +133,7 @@ body{
     color: black;
     background-color: rgba(196, 212, 255, 0.199);
     padding-bottom: 15px;
+    backdrop-filter: blur(1px);
     transition: all 500ms ease-in-out;
 }
 #user{
@@ -167,12 +166,150 @@ body{
 #secundaria:hover{
     font-size: 25px;
     transition: all 500ms ease-in-out;
-    border-radius: 10px;
-    -moz-border-radius: 10px;  
+    border-radius: 10px;   
 }
 #tabla:hover{
     font-size: 30px;
     transition: all 500ms ease-in-out;  
     border-radius: 10px;
-    -moz-border-radius: 10px;
 }
+
+/* Login Styles */
+
+main{
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+.containerLogin{
+    width: 100%;
+    max-width: 800px;
+    margin: 50px;
+    position: relative;
+}
+
+.backbox{
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 136, 255, 0.5);
+    
+}
+.backbox div{
+    margin: 50px 50px;
+    color: white;
+}
+.backbox div p, .backbox div button{
+    margin-top: 30px;
+}
+.backbox div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.backbox button{
+    padding: 10px 40px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    transition: all 200ms ease-in-out;
+}
+.backbox button:hover{
+    background: white;
+    color:  rgba(0, 136, 255, 1);
+}
+/* Login Forms */
+.loginbox{
+    transition: all 700ms ease-in-out;
+}
+.registerbox{
+    transition: all 700ms ease-in-out;
+}
+.login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 330px;
+    position: relative;
+    top: -155px;
+    left: 10px;
+    transition: all 1200ms cubic-bezier(.17,.56,.31,1.19);
+    
+}
+.login-register form{
+    width: 100%;
+    padding: 80px 40px;
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+}
+.login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 136, 255, 1);
+}
+.login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2f2f2;
+}
+.login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    background: rgba(0, 136, 255, 1);
+}
+.login-register form button:hover{
+    transform:scale(1.1);
+}
+
+.formLogin{
+    opacity: 1;
+    display: block;
+}
+.formRegister{
+    display: none;
+}
+
+/* Hacerlo Responsive */
+@media screen and (max-width: 850px){
+    main{
+        margin-top: 50px;
+    }
+    .backbox{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .backbox div{
+        margin: 0;
+        position: absolute;
+    }
+    /* Hacerlo Responsive [Forms]*/
+    .login-register{
+        top:-10px;
+        left: -5px;
+        margin: auto;
+    }
+    
+    .login-register form{
+        position: relative;
+    }
+}
+
+
