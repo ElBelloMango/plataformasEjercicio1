@@ -25,6 +25,7 @@ body{
     background-color:black;
     margin-left: auto;
     transition: all 200ms ease-in-out;
+    display: none;
 }
 .login{
     color:aliceblue;
@@ -184,7 +185,7 @@ main{
 }
 .containerLogin{
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 50px;
     position: relative;
 }
@@ -284,7 +285,10 @@ main{
 .formRegister{
     display: none;
 }
+.formforgot{
+    display: none;  
+}
 
 
-
+ 
 
