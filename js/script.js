@@ -51,15 +51,12 @@ function loginBtn()
 
 
 //login
-function login()
+function login(usuario,contrasena)
 {
-    var cadena = window.location.search.substr(1).split('&');
-    var usuario = cadena[0].split('=')[1];
-    var contrasena = cadena[1].split('=')[1];
     if (localStorage.getItem(usuario)!=null&&usuario!=""&&contrasena!="") 
     {
         if (contrasena==localStorage.getItem(usuario)) {
-            alert("Inicio exitoso"); 
+            alert("Inicio exitoso, bienvenido a la galeria"); 
         }
         else{
             alert("Contraseña erronea");
@@ -68,25 +65,16 @@ function login()
     else{
         alert("Cuenta no registrada");
     }
-
 }
 //register
-function register()
+function register(correo,nombre,usuario,contrasena)
 {
-    var cadena = window.location.search.substr(1).split('&');
-    var correo = cadena[0].split('=')[1];
-    var nombre = cadena[1].split('=')[1];
-    var usuario = cadena[2].split('=')[1];
-    var contrasena = cadena[3].split('=')[1];
-    correo = correo.replace("%40","@");
-    for (let i = 0; i < 4; i++) {
-        nombre = nombre.replace("+"," ");
-    }
     if (localStorage.getItem(correo)==null&&correo!=""&&nombre!=""&&usuario!=""&&contrasena!="") 
     {
         localStorage.setItem(nombre,correo);
         localStorage.setItem(correo,usuario);
         localStorage.setItem(usuario,contrasena);
+        alert("registro exitoso, ahora puedes iniciar sesion");
     }
     else{
         alert("Error en el registro");
