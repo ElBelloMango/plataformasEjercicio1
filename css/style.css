@@ -64,15 +64,6 @@ body{
     transform:scale(1.05);
     border-radius: 40px;
 }
-.loginSquare{
-    margin: 0px;
-}
-
-#imagen{
-    width: 100%;
-    opacity: 90%;
-    margin-left: 0px;
-}
 #menu{
     position: absolute;
     font-size: 60px;
@@ -115,33 +106,6 @@ body{
     padding-bottom: 15px;
     backdrop-filter: blur(1px);
     transition: all 500ms ease-in-out;
-}
-#user{
-    margin-left: 26px;
-}
-#pass{
-    margin-left: 26px;
-}
-#log{
-    border-radius: 10px;
-}
-#reg{
-    border-radius: 10px;
-} 
-#botones{
-    display: inline-flex;
-    flex-direction: row;
-    margin-left: 40px;
-    margin-top: 5px;
-}
-#reg{
-    margin-left: 30px;
-}
-#title{
-    left: 9%;
-    position: absolute;
-    top: 40%;
-    text-align: center;
 }
 #secundaria:hover{
     font-size: 25px;
