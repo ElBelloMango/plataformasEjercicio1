@@ -5,13 +5,13 @@ document.getElementById("btnfor").addEventListener("click",forgotBtn);
 
 
 // Variables
-var contLoginRegister = document.querySelector(".login-register");
+var contLoginRegister = document.querySelector(".formularios");
 var formularioLogin = document.querySelector(".formLogin");
 var formularioRegister = document.querySelector(".formRegister");
 var formularioForgot = document.querySelector(".formforgot");
-var backboxLogin = document.querySelector(".loginbox");
-var backboxRegister = document.querySelector(".registerbox");
-var backboxForgot = document.querySelector(".forgotbox");
+var cajatraseralogin = document.querySelector(".cajatraseralogin");
+var cajatraseraregistro = document.querySelector(".cajatraseraregistro");
+var cajatraseraregistro = document.querySelector(".cajatraseraolvido");
 var botongaleria = document.querySelector(".galeria");
 
 
@@ -23,9 +23,9 @@ function registerBtn()
     contLoginRegister.style.left = "390px";
     formularioLogin.style.display = "none";
     formularioForgot.style.display = "none"
-    backboxRegister.style.opacity = 0;
-    backboxLogin.style.opacity = 1;
-    backboxForgot.style.opacity = 1;
+    cajatraseraregistro.style.opacity = 0;
+    cajatraseralogin.style.opacity = 1;
+    cajatraseraregistro.style.opacity = 1;
 }
 function loginBtn()
 {
@@ -33,9 +33,9 @@ function loginBtn()
     formularioForgot.style.display = "none";
     contLoginRegister.style.left = "10px";
     formularioLogin.style.display = "block";
-    backboxRegister.style.opacity = 1;
-    backboxForgot.style.opacity = 1;
-    backboxLogin.style.opacity = 0;
+    cajatraseraregistro.style.opacity = 1;
+    cajatraseraregistro.style.opacity = 1;
+    cajatraseralogin.style.opacity = 0;
 }
 function forgotBtn() 
 {
@@ -43,9 +43,9 @@ function forgotBtn()
     contLoginRegister.style.left = "842px";
     formularioLogin.style.display = "none";
     formularioForgot.style.display = "block"
-    backboxRegister.style.opacity = 1;
-    backboxLogin.style.opacity = 1;
-    backboxForgot.style.opacity = 0;
+    cajatraseraregistro.style.opacity = 1;
+    cajatraseralogin.style.opacity = 1;
+    cajatraseraregistro.style.opacity = 0;
 }
 
 
@@ -63,9 +63,6 @@ function login(usuario,contrasena)
             alert("Contraseña erronea");
         }
     }
-    else{
-        alert("Cuenta no registrada");
-    }
 }
 //register
 function register(correo,nombre,usuario,contrasena)
@@ -77,9 +74,6 @@ function register(correo,nombre,usuario,contrasena)
         localStorage.setItem(usuario,contrasena);
         alert("registro exitoso, ahora puedes iniciar sesion");
     }
-    else{
-        alert("Error en el registro");
-    }
 }
 // recordar
 function remember(correo,nombre,usuario)
@@ -90,9 +84,6 @@ function remember(correo,nombre,usuario)
         {
             alert("Su contraseña es: "+localStorage.getItem(usuario));    
         }
-    }
-    else{
-        alert("Datos erroneos");
     }
 }
 

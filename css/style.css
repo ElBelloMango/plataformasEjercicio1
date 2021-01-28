@@ -58,11 +58,15 @@ body{
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.233);
     transform:scale(1);
+    filter: brightness(70%);
     transition: all 500ms ease-in-out;  
 }
 .filas:hover{
     transform:scale(1.05);
     border-radius: 40px;
+    filter: brightness(100%);
+    
+    box-shadow: 0px 0px 16px 1px #ffffff;
 }
 #menu{
     position: absolute;
@@ -126,14 +130,14 @@ main{
     margin: auto;
     margin-top: 100px;
 }
-.containerLogin{
+.contenedorLogin{
     width: 100%;
     max-width: 1200px;
     margin: 50px;
     position: relative;
 }
 
-.backbox{
+.cajatraseraprincipal{
     width: 100%;
     padding: 10px 40px;
     display: flex;
@@ -142,19 +146,19 @@ main{
     background-color: rgba(0, 136, 255, 0.5);
     
 }
-.backbox div{
+.cajatraseraprincipal div{
     margin: 50px 50px;
     color: white;
 }
-.backbox div p, .backbox div button{
+.cajatraseraprincipal div p, .cajatraseraprincipal div button{
     margin-top: 30px;
 }
-.backbox div h3{
+.cajatraseraprincipal div h3{
     font-weight: 400;
     font-size: 26px;
 }
 
-.backbox button{
+.cajatraseraprincipal button{
     padding: 10px 40px;
     color: white;
     border: 2px solid white;
@@ -165,18 +169,18 @@ main{
     outline: none;
     transition: all 200ms ease-in-out;
 }
-.backbox button:hover{
+.cajatraseraprincipal button:hover{
     background: white;
     color:  rgba(0, 136, 255, 1);
 }
 /* Login Forms */
-.loginbox{
+.cajatraseralogin{
     transition: all 700ms ease-in-out;
 }
-.registerbox{
+.cajatraseraregistro{
     transition: all 700ms ease-in-out;
 }
-.login-register{
+.formularios{
     display: flex;
     align-items: center;
     width: 100%;
@@ -187,27 +191,27 @@ main{
     transition: all 1200ms cubic-bezier(.17,.56,.31,1.19);
     
 }
-.login-register form{
+.formularios form{
     width: 100%;
     padding: 80px 40px;
     background-color: white;
     position: absolute;
     border-radius: 20px;
 }
-.login-register form h2{
+.formularios form h2{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
     color: rgba(0, 136, 255, 1);
 }
-.login-register form input{
+.formularios form input{
     width: 100%;
     margin-top: 20px;
     padding: 10px;
     border: none;
     background: #F2f2f2;
 }
-.login-register form button{
+.formularios form button{
     padding: 10px 40px;
     margin-top: 40px;
     border: none;
@@ -217,7 +221,7 @@ main{
     outline: none;
     background: rgba(0, 136, 255, 1);
 }
-.login-register form button:hover{
+.formularios form button:hover{
     transform:scale(1.1);
 }
 
