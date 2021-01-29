@@ -253,6 +253,15 @@ main{
     margin-right: 10px;
     border-radius: 4px;
 }
+.tecnologias img{
+    transition: all 400ms ease-in-out;
+    filter: brightness(50%);
+}
+.tecnologias:hover img{
+    transform: scale(1.2);
+    filter: none;
+}
+
 .tecnologias div{
     margin-left: 10px;
 }
