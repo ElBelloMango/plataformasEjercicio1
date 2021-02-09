@@ -1,18 +1,31 @@
-//listener botones
-document.getElementById("btnreg").addEventListener("click",registerBtn);
-document.getElementById("btnlog").addEventListener("click",loginBtn);
-document.getElementById("btnfor").addEventListener("click",forgotBtn);
+window.onload = onloadfunc();
+
+function onloadfunc(){
+    //listener botones
+    document.getElementById("btnreg").addEventListener("click", registerBtn);
+    document.getElementById("btnlog").addEventListener("click", loginBtn);
+    document.getElementById("btnfor").addEventListener("click", forgotBtn);
+    contLoginRegister = document.querySelector(".formularios");
+    formularioLogin = document.querySelector(".formLogin");
+    formularioRegister = document.querySelector(".formRegister");
+    formularioForgot = document.querySelector(".formforgot");
+    cajatraseralogin = document.querySelector(".cajatraseralogin");
+    cajatraseraregistro = document.querySelector(".cajatraseraregistro");
+    cajatraseraregistro = document.querySelector(".cajatraseraolvido");
+    botongaleria = document.querySelector(".galeria");
+}
+
 
 
 // Variables
-var contLoginRegister = document.querySelector(".formularios");
-var formularioLogin = document.querySelector(".formLogin");
-var formularioRegister = document.querySelector(".formRegister");
-var formularioForgot = document.querySelector(".formforgot");
-var cajatraseralogin = document.querySelector(".cajatraseralogin");
-var cajatraseraregistro = document.querySelector(".cajatraseraregistro");
-var cajatraseraregistro = document.querySelector(".cajatraseraolvido");
-var botongaleria = document.querySelector(".galeria");
+var contLoginRegister;
+var formularioLogin;
+var formularioRegister;
+var formularioForgot;
+var cajatraseralogin;
+var cajatraseraregistro;
+var cajatraseraregistro;
+var botongaleria;
 
 
 
